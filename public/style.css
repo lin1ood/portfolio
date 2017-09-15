@@ -1,0 +1,35 @@
+/*body {
+  border: 2px solid blue;
+}*/
+
+#top-nav{
+  border: 2px solid green;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 10px, auto;
+  /*position: fixed;*/
+
+}
+
+ul li {
+  display: inline;
+  /*margin-right: 10px;*/
+}
+
+header{
+  text-align: center;
+  font-family: "Times New Roman Header", Times, serif;
+  background-color: lightblue;
+  border: 2px solid blue;
+  border-radius: 50px 50px;
+  box-shadow: 10px;
+  margin-top: 2em;
+}
+
+header p{
+  font-family: "Courier Header", sans-serif;
+}
+
+footer{
+  text-align: center;
+}
