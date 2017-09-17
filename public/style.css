@@ -1,6 +1,7 @@
 body {
   /*border: 2px solid blue;*/
   background-image:url(./img/Electronic-Chips.jpg);
+  width: 600px;
 }
 
 #top-nav{
@@ -63,6 +64,8 @@ footer{
 }
 
 .wrapper2 {
+  width: 600px;
+
   background-color: lightblue;
   border: 2px solid blue;
   border-radius: 50px 50px;
@@ -108,6 +111,7 @@ footer{
 }
 
 .wrapper{
+  width: 610px;
   color: yellow;
   background-size:contain;
   background-image:url(./img/Matrix-1280x640.jpg);
@@ -126,7 +130,7 @@ footer{
 }
 
 .a {
-  grid-column: col / span 2;
+  grid-column: col 1 / span 2;
   grid-row: row;
 }
 
