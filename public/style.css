@@ -1,7 +1,7 @@
 body {
   /*border: 2px solid blue;*/
   background-image:url(./img/Electronic-Chips.jpg);
-  width: 600px;
+  /*width: 600px;*/
 }
 
 #top-nav{
@@ -63,36 +63,82 @@ footer{
   background-color: ivory;
 }
 
-.wrapper2 {
-  width: 600px;
+@media only screen and (min-width: 500px) and (max-width: 1280px) {
 
-  background-color: lightblue;
-  border: 2px solid blue;
-  border-radius: 50px 50px;
-  box-shadow: 10px;
-  display: grid;
-  grid-gap: 1em;
-  grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px;
-  grid-template-rows: [row] auto;
+    .wrapper{
+      /*width: 610px;*/
+      color: yellow;
+      background-size:contain;
+      background-image:url(./img/Matrix-1280x640.jpg);
+      opacity: 0.9;
+      display: grid;
+      grid-gap: 1em;
+      grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px;
+      grid-template-rows: [row] auto [row] auto [row];
+      align-content: center;
+      justify-content: space-around;
+    }
+
+    .box{
+      border-radius: 5px;
+      margin-top: 6em
+      /*padding: 20px;*/
+      /*font-size: 150%;*/
+    }
+
+    .a {
+      grid-column: col 1 / span 2;
+      grid-row: row;
+    }
+
+    .b {
+      grid-column: col 4 / span 2;
+      grid-row: row;
+    }
+
+    .c {
+      grid-column: col 2 / span 3;
+      grid-row: row 2;
+    }
+
+
+    .wrapper2 {
+      /*width: 600px;*/
+
+      background-color: lightblue;
+      border: 2px solid blue;
+      border-radius: 50px 50px;
+      box-shadow: 10px;
+      display: grid;
+      width: 100%;
+      margin: 0 auto;
+      grid-gap: 1em;
+      grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px [col] 100px;
+      grid-template-rows: [row] auto;
+      align-content: center;
+      justify-content: space-around;
+    }
+    .box1{
+      border-radius: 5px;
+      margin: 1.5em
+      /*padding: 20px;*/
+      /*font-size: 150%;*/
+    }
+    .aa{
+      grid-column: col 1 / span 1;
+      grid-row: row;
+    }
+    .bb{
+      grid-column: col 3 / span 1;
+      grid-row: row;
+    }
+    .cc{
+      grid-column: col 5 / span 1;
+      grid-row: row;
+      padding-right: 20px;
+    }
 }
-.box1{
-  border-radius: 5px;
-  margin: 1.5em
-  /*padding: 20px;*/
-  /*font-size: 150%;*/
-}
-.aa{
-  grid-column: col 2 / span 1;
-  grid-row: row;
-}
-.bb{
-  grid-column: col 3 / span 1;
-  grid-row: row;
-}
-.cc{
-  grid-column: col 4 / span 1;
-  grid-row: row;
-}
+
 
 #expand {
   height: 0px;
@@ -108,38 +154,4 @@ footer{
 }
 #toggle:checked ~ label::before {
   content: "-";
-}
-
-.wrapper{
-  width: 610px;
-  color: yellow;
-  background-size:contain;
-  background-image:url(./img/Matrix-1280x640.jpg);
-  opacity: 0.9;
-  display: grid;
-  grid-gap: 1em;
-  grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px;
-  grid-template-rows: [row] auto [row] auto [row];
-}
-
-.box{
-  border-radius: 5px;
-  margin-top: 6em
-  /*padding: 20px;*/
-  /*font-size: 150%;*/
-}
-
-.a {
-  grid-column: col 1 / span 2;
-  grid-row: row;
-}
-
-.b {
-  grid-column: col 4 / span 2;
-  grid-row: row;
-}
-
-.c {
-  grid-column: col 2 / span 3;
-  grid-row: row 2;
 }
