@@ -1,6 +1,7 @@
-/*body {
-  border: 2px solid blue;
-}*/
+body {
+  /*border: 2px solid blue;*/
+  background-image:url(./img/Electronic-Chips.jpg);
+}
 
 #top-nav{
   border: 2px solid green;
@@ -14,6 +15,9 @@
 ul li {
   display: inline;
   /*margin-right: 10px;*/
+}
+nav{
+  background-color: ivory;
 }
 
 header{
@@ -30,6 +34,108 @@ header p{
   font-family: "Courier Header", sans-serif;
 }
 
+#bio{
+  background-color: ivory;
+  border-radius: 5px;
+  border: 2px solid blue;
+  padding: 5px;
+  margin: 1em;
+}
+
+#about{
+  background-color: ivory;
+  padding: 5px;
+  margin: 1em;
+  border: 2px solid blue;
+  border-radius: 5px;
+}
+
+#skills{
+  background-color: ivory;
+  padding: 5px;
+  margin: 1em;
+  border: 2px solid blue;
+}
+
 footer{
   text-align: center;
+  background-color: ivory;
+}
+
+.wrapper2 {
+  background-color: lightblue;
+  border: 2px solid blue;
+  border-radius: 50px 50px;
+  box-shadow: 10px;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px;
+  grid-template-rows: [row] auto;
+}
+.box1{
+  border-radius: 5px;
+  margin: 1.5em
+  /*padding: 20px;*/
+  /*font-size: 150%;*/
+}
+.aa{
+  grid-column: col 2 / span 1;
+  grid-row: row;
+}
+.bb{
+  grid-column: col 3 / span 1;
+  grid-row: row;
+}
+.cc{
+  grid-column: col 4 / span 1;
+  grid-row: row;
+}
+
+#expand {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  /*color: #FFF;*/
+  /*background-image:url(./img/Electronic-Chips.jpg);*/
+  color: darkblue;
+}
+
+#toggle:checked ~ #expand {
+  height: 500px;
+}
+#toggle:checked ~ label::before {
+  content: "-";
+}
+
+.wrapper{
+  color: yellow;
+  background-size:contain;
+  background-image:url(./img/Matrix-1280x640.jpg);
+  opacity: 0.9;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px;
+  grid-template-rows: [row] auto [row] auto [row];
+}
+
+.box{
+  border-radius: 5px;
+  margin-top: 6em
+  /*padding: 20px;*/
+  /*font-size: 150%;*/
+}
+
+.a {
+  grid-column: col / span 2;
+  grid-row: row;
+}
+
+.b {
+  grid-column: col 4 / span 2;
+  grid-row: row;
+}
+
+.c {
+  grid-column: col 2 / span 3;
+  grid-row: row 2;
 }
